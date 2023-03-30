@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: mlopsimgpjj1 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlopsimgpjj1
+  template:
+    metadata:
+      labels:
+        app: mlopsimgpjj1 
+    spec:
+      containers:
+        - name: mlopsimgpjj1 
+          image: mlopspjj1amlcr.azurecr.io/mlopsimgpjj1
+          ports:
+          - containerPort: 80
